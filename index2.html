@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day2</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <h3> 8. What is box sizing? </h3>
+    <p> 
+        Box sizing is a property defines how the width and height get applied on the element. Box-sizing property 
+        allows us to include the padding and border in an element's total width and height. By default, the width 
+        and height of an element is calculated like this: width + padding + border = actual width of an element
+        height + padding + border = actual height of an element. So we set box-sizing as border box so it doesn't 
+        include padding and border in the actual width and height.
+    </p>
+    <div class="container-box2">
+        <div class="container-main-box1">
+            <h3>Content Box</h3>
+            <p>Actual width/height = width/height + padding(right+left) + border(right+left)</p>
+            <P>width = 250 + 0 + 0</P>
+            <P>height = 240 + 0 + 0</P>
+        </div>
+        <div class="container-main-box2">
+            <h3>Border Box</h3>
+            <p>Actual width/height = width/height - padding(right+left) - border(right+left)</p>
+            <P>width = 250 - 10 - 4 = 236</P>
+            <P>height = 240 - 10 - 4 = 226</P>
+
+        </div>
+    </div>
+    <h3> 9. What is animation delay? </h3>
+    <p> 
+        Animation  delay is a sub property of css animation. It is defined that how long the animation should wait 
+        by specifying the number of second and milliseconds before starting. The animation-delay CSS property specifies 
+        the amount of time to wait from applying the animation to an element before beginning to perform the animation. 
+        The animation can start later, immediately from its beginning, or immediately and partway through the animation.
+    </p>
+    <div class="container-box3">
+        <img src="car1.jpeg" alt="" class="car">
+  
+    </div>
+    <h3> 10. Which property you will use to merge cells vertically in grid? </h3>
+    <p> 
+        To merge the cells vertically in a grid we use grid column property. grid-column-start and grid-column-end 
+        both these property specifies a grid item's size and location in a grid layout vertically. Its shorthand 
+        property is grid column, eg  ->   grid-column : 1/4;
+    </p>
+    <div class="container-box3">
+        <div class="grid-container1">
+            <div class="grid-box"></div>
+            <div class="grid-box"></div>
+            <div class="grid-box"></div>
+            <div class="grid-box"></div>
+            <div class="grid-box box5 "></div>
+            <div class="grid-box"></div>
+            <div class="grid-box"></div>
+            <div class="grid-box"></div>
+            <div class="grid-box"></div>
+        </div>
+    </div>
+    <h3> 11. Which property you will use to merge cells horizontally in grid? </h3>
+    <p> 
+        To merge the cells horizontally in a grid we use grid row property. grid-row-start and grid-row-end both 
+        these property specifies a grid item's size and location in a grid layout horizontally. Its shorthand property 
+        is grid row, eg  ->   grid-row : 1/4;
+    </p>
+    <div class="container-box3">
+        <div class="grid-container2">
+            <div class="grid-box1 "></div>
+            <div class="grid-box1 "></div>
+            <div class="grid-box1 box3"></div>
+            <div class="grid-box1"></div>
+            <div class="grid-box1 "></div>
+            <div class="grid-box1"></div>
+            <div class="grid-box1"></div>
+            <div class="grid-box1"></div>
+            <div class="grid-box1"></div>
+        </div>
+    </div>
+    <h3> 12. Explain CSS box model? </h3>
+    <p> 
+        Box model refers to how HTML elements are modeled in browser. It us mostly referred when we design some 
+        page or layout. It basically allows us to add a border around elements, and to define space between elements.
+        It is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, 
+        and the actual content. 
+<pre>
+    <strong>Content -> </strong> The content of the box, where text and images appear. 
+    <strong>Padding -> </strong> Clears an area around the content. The padding is transparent.
+    <strong>Border -> </strong> A border that goes around the padding and content.
+    <strong>Margin -> </strong> Clears an area outside the border. The margin is transparent.   
+</pre>
+         
+    </p>
+    <div class="container">
+        <div class="container-box6">
+            <p class="box6-para"> Light green is padding 30px each side, dark green is the border of 30px each side and the white space is 30px margin each side. </p>
+        </div>
+    </div>
+    <h3> 13. what is the difference between display none and visibility hidden? </h3>
+    <p> 
+        Display none and visibility hidden both are used to hide the elements. The main difference is display 
+        none doesn't take any space and is hidden but visibility hidden gets up its original space and is not 
+        visible too.
+    </p>
+    <div class="container"> 
+        <div class="container-box5">
+            <h3>Visibility : hidden;</h3>
+            <p class="visible">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+             <p> visibility hidden gets up its original space and is not 
+                visible</p>
+            <h3>Display : none;</h3>
+            <p class="display">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut sunt commodi rerum corporis</p>
+            <p>display none doesn't take any space and is hidden</p>
+        </div>
+    </div>
+</body>
+</html>
